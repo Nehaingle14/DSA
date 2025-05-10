@@ -1,1 +1,50 @@
+// Count odd value and even value
 
+import java.util.*;
+public class Day5{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter he sie: ");
+        int size = sc.nextInt();
+        int arr[] = new int[size];
+
+        int odd = 0;
+        int even = 0;
+
+        for(int i = 0; i < arr.length; i++){
+            System.out.print("Enter the value: ");
+            arr[i] = sc.nextInt();
+        }
+
+        for(int i = 0; i < arr.length; i++){
+
+            if(arr[i]%2 == 0){
+                even++;
+            }
+            else{
+                odd++;
+            }
+        }
+        System.out.println("total odd is: "+odd);
+        System.out.print("total even is: "+even);
+
+    }
+}
+
+
+
+//print the heighest value of an array
+
+public class Day5{
+    public static void main(String[] args) {
+        int arr[] = {1,2,12,6,9,3};
+        int maxValue = arr[0];
+
+        for(int i = 1; i < arr.length; i++){
+            if(maxValue < arr[i]){
+                maxValue = arr[i];
+            }
+        }
+        System.out.println(maxValue);
+    }
+}
